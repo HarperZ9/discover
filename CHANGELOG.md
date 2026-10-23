@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 (2026-10-23)
+
+The GitHub Action now pins actions/setup-python to a full commit SHA, so repositories that require SHA-pinned actions can use discover without an exception.
+
 ## 0.1.1 (2026-10-23)
 
 With no release version named, the release-notes check now reads the newest released changelog section instead of an Unreleased placeholder, so pull request reports describe what shipped last.
