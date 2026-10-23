@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "discover-gate"
-version = "0.1.0"
+version = "0.1.1"
 description = "A pre-release check that your repo, package, site and videos can be found by the people they serve: README opening, topics, package keywords, CITATION.cff, JSON-LD, sitemap, llms.txt and video chapters."
 readme = "README.md"
 requires-python = ">=3.11"

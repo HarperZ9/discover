@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 (2026-10-23)
+
+With no release version named, the release-notes check now reads the newest released changelog section instead of an Unreleased placeholder, so pull request reports describe what shipped last.
+
 ## 0.1.0 (2026-10-23)
 
 discover tells you, before a release, what will stop people from finding your project and how to fix each item. It checks a repository, a static site and a video plan, scores the result, and with `--gate` fails CI when a blocking item is missing.

@@ -77,10 +77,11 @@ def changelog_section(text: str, version: str | None) -> tuple[str, str] | None:
             if token.search(heading):
                 return heading, body
         return None
-    for heading, body in pairs:
-        if paragraphs(body):
-            return heading, body
-    return None
+    # With no release named, read the newest released section; an Unreleased
+    # section is often a placeholder. Fall back to it only when nothing else exists.
+    filled = [(h, b) for h, b in pairs if paragraphs(b)]
+    released = [(h, b) for h, b in filled if "unreleased" not in h.lower()]
+    return (released or filled or [None])[0]
 
 
 def paragraphs(body: str) -> list[str]:

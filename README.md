@@ -3,7 +3,7 @@
 discover tells you, before you release, what will stop people from finding your project, and how to fix each item. It checks a repository, a static site and a video plan against what search engines, AI search products, PyPI, npm, GitHub and YouTube read.
 
 ```bash
-python -m pip install "git+https://github.com/HarperZ9/discover@v0.1.0"
+python -m pip install "git+https://github.com/HarperZ9/discover@v0.1.1"
 discover repo . --gate
 ```
 
@@ -64,7 +64,7 @@ With `"scope": "sitemap"`, pages the sitemap lists must pass; other indexable pa
 
 ```yaml
 - uses: actions/checkout@v5
-- uses: HarperZ9/discover@v0.1.0
+- uses: HarperZ9/discover@v0.1.1
   with:
     mode: repo        # or site, or video
     path: .
